@@ -8,12 +8,14 @@ public class Enemy : MonoBehaviour
     private Movements movements;
     private int currentIndex = 0;
     private int pathCount;
-    
+    private Spawner spawner;
+
+    private float health = 10;
     // Start is called before the first frame update
-    public void Setup(Transform[] paths)
+    public void Setup(Spawner spawner, Transform[] paths)
     {
         movements = GetComponent<Movements>();
-
+        this.spawner = spawner;
         pathCount = paths.Length;
         this.path = new Transform[pathCount];
         this.path = paths;
@@ -53,7 +55,30 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Data.Instance.health -= 1;
+            Dead();
         }
+    }
+
+    public void TakeDamage(float damage)
+    {
+
+        health -= damage;
+
+        //Monster Die
+        if (health <= 0)
+        {
+            health = 0;
+            Data.Instance.score += 100;
+            Data.Instance.enemyAmount -= 1;
+            Data.Instance.currency += 35;
+            Dead();
+        }
+       
+    }
+
+    public void Dead()
+    {
+        spawner.DestroyEnemy(this);
     }
 }
