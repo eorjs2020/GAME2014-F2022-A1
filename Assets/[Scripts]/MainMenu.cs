@@ -6,26 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public Text State;
    
-    private void Start()
-    {
-        if (Data.Instance.health > 0)
-        {
-            State.text = "Win";
-           
-        }
-        else
-        {
-            State.text = "Loss";
-            
-        }
-    }
-
+ 
     public void GameStart()
-    {
-        Debug.Log("a");
+    {      
         SceneManager.LoadScene("Level1");
+    }
+    public void TutoStart()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
   
 }

@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     private int currentIndex = 0;
     private int pathCount;
     private Spawner spawner;
-
+    private AudioSource damagesound;
     private float health = 10;
     // Start is called before the first frame update
     public void Setup(Spawner spawner, Transform[] paths)
@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
         transform.position = path[currentIndex].position;
 
         StartCoroutine("OnMove");
+        damagesound = GetComponent<AudioSource>();
 
     }
 
@@ -62,7 +63,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-
+        damagesound.Play();
         health -= damage;
 
         //Monster Die

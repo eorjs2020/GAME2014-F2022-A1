@@ -10,7 +10,7 @@ public class EndState : MonoBehaviour
     public Text Score;
     private void Start()
     {
-      /*  if (Data.Instance.health > 0)
+        if (Data.Instance.health >= 0)
         {
             State.text = "Win";
             Score.text = Data.Instance.score.ToString();
@@ -19,7 +19,7 @@ public class EndState : MonoBehaviour
         {
             State.text = "Loss";
             Score.text = "";
-        }*/
+        }
     }
 
     public void BacktoMain()
