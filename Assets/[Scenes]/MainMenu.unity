@@ -348,7 +348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 276be604e943ac644955a8f1629b03e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: {fileID: 1435796675}
 --- !u!114 &586102124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,7 +827,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 586102123}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: GameStart
+        m_MethodName: TutoStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
