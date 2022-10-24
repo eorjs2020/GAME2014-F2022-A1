@@ -8,6 +8,7 @@ public class EndState : MonoBehaviour
 {
     public Text State;
     public Text Score;
+    private Data data;
     private void Start()
     {
         if (Data.Instance.health >= 0)
@@ -24,6 +25,8 @@ public class EndState : MonoBehaviour
 
     public void BacktoMain()
     {
+        data = GameObject.FindObjectOfType<Data>();
+        Destroy(data.gameObject);
         SceneManager.LoadScene("MainMenu");
     }
 }

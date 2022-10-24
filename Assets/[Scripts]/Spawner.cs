@@ -5,7 +5,9 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField]
-    private GameObject enemyPrefab;
+    private GameObject enemyBat;
+    [SerializeField]
+    private GameObject enemyBunny;
     [SerializeField]
     private float spawnTime;
     [SerializeField]
@@ -13,6 +15,7 @@ public class Spawner : MonoBehaviour
     private List<Enemy> enemyList;
 
     public int wave;
+  
 
 
     public List<Enemy> EnemyList => enemyList;
@@ -36,7 +39,11 @@ public class Spawner : MonoBehaviour
     {
         while(true)
         {
-            GameObject clone = Instantiate(enemyPrefab);
+            GameObject clone;
+            if (Data.Instance.waveAmount >= 10)
+                clone = Instantiate(enemyBat);
+            else
+                clone = Instantiate(enemyBunny);
             Enemy enemy = clone.GetComponent<Enemy>();
             enemy.Setup(this, paths);
             enemyList.Add(enemy);

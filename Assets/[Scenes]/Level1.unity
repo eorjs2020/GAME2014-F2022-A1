@@ -175,6 +175,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 365240731
+      objectReference: {fileID: 0}
     - target: {fileID: 8790277249620854674, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_Name
       value: SpawnTile
@@ -233,6 +241,14 @@ PrefabInstance:
     - target: {fileID: 339705253390147108, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 365240731
       objectReference: {fileID: 0}
     - target: {fileID: 8790277249620854674, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_Name
@@ -352,6 +368,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 365240731
+      objectReference: {fileID: 0}
     - target: {fileID: 8790277249620854674, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_Name
       value: SpawnTile
@@ -416,6 +440,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 365240731
+      objectReference: {fileID: 0}
     - target: {fileID: 8790277249620854674, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_Name
       value: SpawnTile
@@ -474,6 +506,14 @@ PrefabInstance:
     - target: {fileID: 339705253390147108, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 365240731
       objectReference: {fileID: 0}
     - target: {fileID: 8790277249620854674, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_Name
@@ -737,7 +777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e6e73dccfecccb46ba493b018024bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8714954807288570571, guid: 3450efae88998bf4b89628f17eb144e2, type: 3}
+  enemyBat: {fileID: 8714954807288570571, guid: 3450efae88998bf4b89628f17eb144e2, type: 3}
+  enemyBunny: {fileID: 8714954807288570571, guid: c343d8edf8cebf64ab20e93fa197c197, type: 3}
   spawnTime: 3
   paths:
   - {fileID: 1775864263}
@@ -752,7 +793,7 @@ MonoBehaviour:
   - {fileID: 1388038350}
   - {fileID: 1026282362}
   - {fileID: 1609576618}
-  wave: 5
+  wave: 20
 --- !u!4 &486991700
 Transform:
   m_ObjectHideFlags: 0
@@ -1086,6 +1127,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 365240731
+      objectReference: {fileID: 0}
     - target: {fileID: 8790277249620854674, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_Name
       value: SpawnTile
@@ -1298,6 +1347,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 65992021935574404, guid: a08e07f0eb4816f418235cb24ff5812f, type: 3}
+      propertyPath: m_Text
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 4349924994078961533, guid: a08e07f0eb4816f418235cb24ff5812f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1312,7 +1365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4349924994078961533, guid: a08e07f0eb4816f418235cb24ff5812f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4349924994316846948, guid: a08e07f0eb4816f418235cb24ff5812f, type: 3}
       propertyPath: m_Sprite
@@ -1752,7 +1805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tower:
-  - {fileID: 3214757740198575312, guid: e6a61fdbc9dde894498cdac32ced2738, type: 3}
+  - {fileID: 7770018758351309511, guid: 89bdee5113d0a64428a4a28c17b43de1, type: 3}
   - {fileID: 7770018758351309511, guid: a1037f88c7484304fb68ad6b24ff0811, type: 3}
 --- !u!4 &1277247134
 Transform:
@@ -1820,6 +1873,14 @@ PrefabInstance:
     - target: {fileID: 339705253390147108, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 365240731
       objectReference: {fileID: 0}
     - target: {fileID: 8790277249620854674, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_Name
@@ -2292,6 +2353,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 365240731
+      objectReference: {fileID: 0}
     - target: {fileID: 8790277249620854674, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_Name
       value: SpawnTile
@@ -2614,6 +2683,14 @@ PrefabInstance:
     - target: {fileID: 339705253390147108, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880920631123036529, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 365240731
       objectReference: {fileID: 0}
     - target: {fileID: 8790277249620854674, guid: 611b7328f8d04ad48b0ae225172aaa4b, type: 3}
       propertyPath: m_Name

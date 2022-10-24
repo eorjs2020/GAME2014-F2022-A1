@@ -26,12 +26,20 @@ public class ObjectDetector : MonoBehaviour
         Data.Instance.health = 10;
         Data.Instance.score = 0;
         Data.Instance.currency = 140;
+        StartCoroutine("CurrencyGain", 3);
         cam = Camera.main;        
     }
-
+    private IEnumerator CurrencyGain(float delaytime) 
+    {
+        Data.Instance.currency += 1;
+        yield return new WaitForSeconds(3);
+        StartCoroutine("CurrencyGain", 3);
+    }
+    
     // Update is called once per frame
     void Update()
     {
+        
         //if(Input.GetMouseButton(0))
         foreach (var touch in Input.touches)
         {
@@ -59,6 +67,7 @@ public class ObjectDetector : MonoBehaviour
 
         if (Data.Instance.health <= 0 || Data.Instance.enemyAmount <= 0)
         {
+            StopCoroutine("CurrencyGain");
             EndState();
         }
     }
@@ -66,6 +75,7 @@ public class ObjectDetector : MonoBehaviour
     public void TowerSpawn(int towerIndex)
     {        
         towerUI.SetActive(false);
+        
         towerSpawner.SpawnTower(currentTower.transform, towerIndex);        
     }
 

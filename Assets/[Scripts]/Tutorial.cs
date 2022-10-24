@@ -11,6 +11,7 @@ public class Tutorial : MonoBehaviour
     public GameObject nextButton;
     public Image panelImage;
     private int index = 0;
+    private Data data;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,8 @@ public class Tutorial : MonoBehaviour
     }
     public void BacktoMain()
     {
+        data = GameObject.FindObjectOfType<Data>();
+        Destroy(data.gameObject);
         SceneManager.LoadScene("MainMenu");
     }
 }

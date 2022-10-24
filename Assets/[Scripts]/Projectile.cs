@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     private bool collideMonster = false;
 
     [SerializeField]
-    private int level;
+    private int dmg;
 
     private Enemy target;
     private Turrets parent;
@@ -57,7 +57,7 @@ public class Projectile : MonoBehaviour
             if (target.gameObject.Equals(collision.gameObject))
             {
                 collideMonster = true;
-                target.TakeDamage(2);
+                target.TakeDamage(dmg);
                 Destroy(gameObject);
                 
             }

@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     private int pathCount;
     private Spawner spawner;
     private AudioSource damagesound;
-    private float health = 10;
+    public float health = 10;
     // Start is called before the first frame update
     public void Setup(Spawner spawner, Transform[] paths)
     {

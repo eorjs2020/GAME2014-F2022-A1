@@ -8,10 +8,9 @@ public class TowerSpawner : MonoBehaviour
 
     public void SpawnTower(Transform towerTransform, int Index)
     {
-
         Tile tile = towerTransform.GetComponent<Tile>();
 
-        if (tile.isBuildTower == true && Data.Instance.currency < 70)
+        if (tile.isBuildTower == true || Data.Instance.currency < 70)
         {
             return;
         }
